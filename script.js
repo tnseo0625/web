@@ -4,31 +4,24 @@
 const playlist = {
   "K-Pop": [
     { id: "gdZLi9oWNZg", title: "BTS - Dynamite" },
-    { id: "pSudEWBAYRE", title: "BLACKPINK - DDU-DU DDU-DU" },
+    { id: "h0KIWaUEIgQ", title: "한로로 - 사랑하게 될거야" },
     { id: "9bZkp7q19f0", title: "PSY - Gangnam Style" },
-    { id: "nYh-n7EOtMA", title: "aespa - Next Level" },
-    { id: "Km71Rr9K-Vc", title: "NewJeans - Hype Boy" }
-  ],
-  "팝": [
-    { id: "JGwWNGJdvx8", title: "Ed Sheeran - Shape of You" },
-    { id: "kXYiU_JCYtU", title: "Linkin Park - Numb" },
-    { id: "fJ9rUzIMcZQ", title: "Queen - Bohemian Rhapsody" },
-    { id: "RgKAFK5djSk", title: "Wiz Khalifa - See You Again" },
-    { id: "SlPhMPnQ58k", title: "The Weeknd - Blinding Lights" }
+    { id: "phuiiNCxRMg", title: "aespa - Supernova" },
+    { id: "EmeW6li6bbo", title: "NMIXX - Blue Valentine" }
   ],
   "발라드": [
-    { id: "6-v1b9waHWY", title: "임영웅 - 이제 나만 믿어요" },
-    { id: "nkqQELWTsH4", title: "폴킴 - 모든 날 모든 순간" },
-    { id: "vv2DSm63jhA", title: "이문세 - 광화문 연가" },
-    { id: "GFCPQKbNHxk", title: "태연 - 11:11" },
-    { id: "2ZIpFytCSX4", title: "백예린 - Square" }
+    { id: "YBzJ0jmHv-4", title: "폴킴 - 너를 만나" },
+    { id: "m3DZsBw5bnE", title: "AKMU - 어떻게 이별까지 사랑하겠어, 널 사랑하는 거지" },
+    { id: "ZurHW2kBqrw", title: "카더가든 - 그대 작은 나의 세상이 되어" },
+    { id: "t8P-zdkoeJA", title: "잔나비 - 주저하는 연인들을 위해" },
+    { id: "gPNu9OIj4Zo", title: "정승환 - 눈사람" }
   ],
   "힙합": [
-    { id: "uelHwf8o7_U", title: "Eminem - Lose Yourself" },
-    { id: "BtunFPmEXXk", title: "BTS - MIC Drop" },
-    { id: "fHI8X4OXluQ", title: "빈지노 - 망원동" },
-    { id: "nfWlot6h_JM", title: "Taylor Swift - Shake It Off" },
-    { id: "o0u4M6vppCI", title: "Cardi B - WAP" }
+    { id: "k6CBMCI07WY", title: "다이나믹 듀오 - 고백" },
+    { id: "ib-o3OZfqy4", title: "리쌍 - 광대" },
+    { id: "AMWOLv4Y_0Y", title: "비와이 - Day Day (Feat. 박재범)" },
+    { id: "pJ-IGZKyfpU", title: "우원재 - 시차 (We Are) (Feat. 로꼬 & GRAY)" },
+    { id: "lOrU0MH0bMk", title: "창모 (CHANGMO) - METEOR" }
   ]
 };
 
