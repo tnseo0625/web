@@ -2,47 +2,108 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>음악 랜덤 사이트</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>음악 랜덤 사이트</h1>
+  <div class="bg-noise"></div>
 
-  <!-- 장르 선택 -->
-  <div class="section">
-    <h2>노래 장르 선택</h2>
-    <input type="radio" name="genre" value="K-Pop"> K-Pop
-    <input type="radio" name="genre" value="팝"> 팝
-    <input type="radio" name="genre" value="발라드"> 발라드
-    <input type="radio" name="genre" value="힙합"> 힙합
+  <div class="container">
+    <header>
+      <div class="logo-area">
+        <span class="logo-icon">♪</span>
+        <h1>음악 랜덤</h1>
+      </div>
+      <p class="subtitle">장르를 선택하고 랜덤 음악을 만나보세요</p>
+    </header>
+
+    <main>
+      <!-- 장르 선택 -->
+      <section class="section">
+        <h2 class="section-title">장르 선택</h2>
+        <div class="genre-grid">
+          <label class="genre-card">
+            <input type="radio" name="genre" value="K-Pop" />
+            <span class="genre-label">
+              <span class="genre-emoji">🎤</span>
+              <span>K-Pop</span>
+            </span>
+          </label>
+          <label class="genre-card">
+            <input type="radio" name="genre" value="팝" />
+            <span class="genre-label">
+              <span class="genre-emoji">🌍</span>
+              <span>팝</span>
+            </span>
+          </label>
+          <label class="genre-card">
+            <input type="radio" name="genre" value="발라드" />
+            <span class="genre-label">
+              <span class="genre-emoji">🎵</span>
+              <span>발라드</span>
+            </span>
+          </label>
+          <label class="genre-card">
+            <input type="radio" name="genre" value="힙합" />
+            <span class="genre-label">
+              <span class="genre-emoji">🎧</span>
+              <span>힙합</span>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <!-- 옵션 -->
+      <section class="section">
+        <h2 class="section-title">재생 옵션</h2>
+        <div class="options-row">
+          <label class="toggle-label">
+            <input type="checkbox" id="autoplay" checked />
+            <span class="toggle-track"></span>
+            <span class="toggle-text">자동 재생 <small>(음소거 필요)</small></span>
+          </label>
+          <label class="toggle-label">
+            <input type="checkbox" id="mute" />
+            <span class="toggle-track"></span>
+            <span class="toggle-text">음소거</span>
+          </label>
+        </div>
+        <p class="notice">⚠ 브라우저 정책상 자동재생은 음소거 상태에서만 작동합니다.</p>
+      </section>
+
+      <!-- 검색 버튼 -->
+      <button id="searchBtn">
+        <span class="btn-icon">▶</span>
+        <span>랜덤 재생</span>
+      </button>
+
+      <!-- 플레이어 영역 -->
+      <div id="playerArea">
+        <div class="player-header">
+          <span id="nowPlaying">재생 중...</span>
+        </div>
+        <div class="iframe-wrap">
+          <iframe
+            id="ytFrame"
+            width="100%"
+            height="360"
+            src=""
+            allow="autoplay; encrypted-media; fullscreen"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div id="linkArea">
+          <a id="ytLink" href="#" target="_blank">↗ 유튜브에서 보기</a>
+        </div>
+      </div>
+    </main>
   </div>
 
-  <!-- 자동재생 / 음소거 옵션 -->
-  <div class="options">
-    <label><input type="checkbox" id="autoplay" checked> 자동 재생</label>
-    <label><input type="checkbox" id="mute"> 음소거</label>
-  </div>
-
-  <!-- 검색 버튼 -->
-  <button id="searchBtn">검색</button>
-
-  <!-- 유튜브 창 + 하이퍼링크 -->
-  <div id="playerArea" style="display:none;">
-    <iframe
-      id="ytFrame"
-      width="600"
-      height="350"
-      src=""
-      allow="autoplay; encrypted-media"
-      allowfullscreen>
-    </iframe>
-    <div id="linkArea">
-      <a id="ytLink" href="#" target="_blank">유튜브에서 자세히 보기 (새 창)</a>
-    </div>
-  </div>
-  
-  <script src="./script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
